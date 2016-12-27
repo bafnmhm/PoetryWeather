@@ -17,14 +17,14 @@ class Window(QtGui.QWidget):
         self.setGraphicsEffect(shadow)
 
     def paintEvent(self, event):
-        border_radius = 15
-        s = self.size()
+        borderRadius = 15
+        winSize = self.size()
         qp = QtGui.QPainter()
         qp.begin(self)
         qp.setRenderHint(QtGui.QPainter.Antialiasing, True)
         qp.setPen(QtGui.QColor(255, 255, 255))
         qp.setBrush(QtGui.QColor(255, 255, 255))
-        qp.drawRoundedRect(20, 20, s.width() - 40, s.height() - 40, border_radius, border_radius)
+        qp.drawRoundedRect(20, 20, winSize.width() - 40, winSize.height() - 40, borderRadius, borderRadius)
         qp.end()
 
     def mouseReleaseEvent(self, event):
