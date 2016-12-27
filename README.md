@@ -1,4 +1,3 @@
-#
-# Just a simple desktop app
-# Used PyQt4
-#
+Just a simple desktop app
+
+Used PyQt4
